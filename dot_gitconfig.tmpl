@@ -1,0 +1,39 @@
+# This configures Git to use the macOS keychain for storing credentials.
+[credential]
+	helper = osxkeychain
+
+# This configures Git to only convert line endings on edited files, not on all files.
+[core]
+	autocrlf = input
+
+# This enables Git LFS (Large File Storage) support, allowing large files to be stored in a separate server instead of the repository.
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# This configures the default branch for new repositories.
+[init]
+	defaultBranch = main
+
+# This configures the user details for new repositories.
+[user]
+	name = "{{ .name }}"
+	email = "{{ .email }}"
+
+# This includes the .gitconfig-occulix file if the repository is in the occulix directory.
+[includeIf "gitdir:~/dev/occulix/**"]
+    path = ~/.gitconfig-occulix
+
+# This sets the maximum size of the HTTP POST buffer to 500 MB.
+[http]
+	postBuffer = 524288000
+
+# This sets the signing key for signing commits using SSH.
+[user]
+  	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPTBl5jCkj3IunGxEc2gMcGMomZG4f7ofXIECXeLUWOv
+
+# This enables GPG signing for all commits, ensuring that they are cryptographically verifiable.
+[commit]
+  	gpgsign = true

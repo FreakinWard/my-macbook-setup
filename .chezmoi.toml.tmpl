@@ -1,0 +1,20 @@
+{{- $locationChoices := list "default" "client" -}}
+{{- $location := promptChoice "location" $locationChoices "default" -}}
+{{- $name := promptString "name" -}}
+{{- $email := promptString "email" -}}
+{{- $wakatimeToken := promptString "wakatimeToken" -}}
+{{- $clientName := "" -}}
+{{- if eq $location "client" -}}
+{{-   $clientName = promptString "clientName" -}}
+{{- end -}}
+[data]
+    location = "{{ $location }}"
+    name = "{{ $name }}"
+    email = "{{ $email }}"
+    wakatimeToken = "{{ $wakatimeToken }}"
+    
+    {{- if eq $location "default" }}
+    clientName = "personal"
+    {{- else }}
+    clientName = "{{ $clientName }}"
+    {{- end }}

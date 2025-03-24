@@ -1,0 +1,28 @@
+[settings]
+# Wakapi API configuration
+api_key = "{{ .wakatimeToken }}"
+api_url = https://wakapi.dev/api
+hostname = "machine-{{ .clientName }}"
+
+# Only track files within projects having a .wakatime-project file or git repo
+include_only_with_project_file = true
+
+# Exclude certain files and directories
+exclude = ^COMMIT_EDITMSG$ ^TAG_EDITMSG$ \.git/ node_modules/ \.idea/ \.vscode/
+
+# Debug and status bar settings
+debug = false
+status_bar_enabled = true
+status_bar_coding_activity = true
+
+# Improved project mapping with file path patterns (adjust based on your actual paths)
+[projectmap]
+# URLs (original mappings)
+jira\.contegix\.revxplatform\.us = "RSI"
+uidev\.nxg\.revenuepremier\.com = "RSI" 
+github\.com/revenue-solutions-inc = "RSI"
+
+# Local paths (add these based on your actual project locations)
+^/Users/[^/]+/projects/rev = "RSI"
+^/Users/[^/]+/work/rsi = "RSI"
+^/Users/[^/]+/git/rsi = "RSI"
