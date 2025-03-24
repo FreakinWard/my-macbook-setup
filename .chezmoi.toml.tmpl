@@ -1,4 +1,4 @@
-{{- $locationChoices := list "default" "client" -}}
+{{- $locationChoices := list "default" "dev" "client" -}}
 {{- $location := promptChoice "location" $locationChoices "default" -}}
 {{- $name := promptString "name" -}}
 {{- $email := promptString "email" -}}

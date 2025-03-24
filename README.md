@@ -23,7 +23,10 @@ Welcome to the land of "I can't believe I manually did this for years." This pro
    chezmoi init --apply https://github.com/freakinward/macbook-lifesaver.git \
      --data='{"name":"Your Name","email":"your.email@example.com","location":"default"}'
    ```
-   Note: For `location`, use "default" for your personal machine or "client" for client-owned machines. If not specified, "default" is used.
+   Note: For `location`, use one of the following:
+   - `default`: For your personal machine (used if not specified)
+   - `dev`: For development machines
+   - `client`: For client-owned machines
 
 ## Configuration
 The project uses chezmoi for managing dotfiles and configurations. Here are the key commands you'll need:
