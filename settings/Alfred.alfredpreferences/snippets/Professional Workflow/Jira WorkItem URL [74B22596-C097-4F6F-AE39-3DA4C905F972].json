@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "https:\/\/jira.contegix.revxplatform.us\/browse\/{clipboard}",
+    "uid" : "74B22596-C097-4F6F-AE39-3DA4C905F972",
+    "name" : "Jira WorkItem URL",
+    "keyword" : ":jwi:"
+  }
+}

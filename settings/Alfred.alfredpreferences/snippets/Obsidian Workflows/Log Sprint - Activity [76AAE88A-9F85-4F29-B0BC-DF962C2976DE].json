@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- {date:HH:mm}\n\t- [.] #log\/sprint \n\t\t- \n",
+    "uid" : "76AAE88A-9F85-4F29-B0BC-DF962C2976DE",
+    "name" : "Log Sprint - Activity",
+    "keyword" : ":lsa:"
+  }
+}

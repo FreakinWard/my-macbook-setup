@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "### Required:\n- [x] I have performed a self-review of my own code\n- [x] My changes generate no console warnings\n- [x] My changes do not violate the style guidelines of this project.\n- [x] My changes do not introduce any unreadable or hard-to-understand areas without comments.\n- [x] Existing tests pass locally with my changes.\n- [x] My changes have no hard coded text\n \n ### House keeping: \n<!-- ignore-task-list-start -->\n- [x] I have tested my changes locally with both positive and negative scenarios.\n- [x] I have added tests that are passing and prove my fix is effective or that my feature works.\n- [ ] I have made corresponding additions\/changes to the documentation\n- [ ] I have tested my changes for accessibility compliance\n<!-- ignore-task-list-end -->",
+    "uid" : "B54BE54E-021F-4B3B-8B39-BC908A0BE8B8",
+    "name" : "RevXUI PR Checklist",
+    "keyword" : ":prcl:"
+  }
+}

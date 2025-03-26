@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "git cherry-pick {clipboard}",
+    "uid" : "4EA7D4A9-F865-4C16-AF75-A7943D3DD4AE",
+    "name" : "git cherry-pick",
+    "keyword" : ":gcp"
+  }
+}

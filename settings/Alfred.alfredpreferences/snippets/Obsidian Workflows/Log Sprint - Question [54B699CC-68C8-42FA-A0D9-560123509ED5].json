@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- {date:HH:mm}\n\t- [ ] #question [[TopicOrProject]]\n",
+    "uid" : "54B699CC-68C8-42FA-A0D9-560123509ED5",
+    "name" : "Log Sprint - Question",
+    "keyword" : ":lsq:"
+  }
+}
