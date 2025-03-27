@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "- {date:HH:mm}\n\t- [.] #log\/sprint [[Project - Negotiate Port]]\n\t\t- Yesterday: \n\t\t- Today: \n\t\t- Impediments: \n\t\t- Notes: \n\t\t\t- \n",
-    "uid" : "B9439AE4-449A-484B-81DB-753BBD29AA98",
-    "name" : "Log Sprint - Standup",
-    "keyword" : ":lss:"
-  }
-}

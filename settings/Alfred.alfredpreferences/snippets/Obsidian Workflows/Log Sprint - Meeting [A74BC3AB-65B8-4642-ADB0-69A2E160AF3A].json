@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "- {date:HH:mm}\n\t- [.] #log\/sprint [[{date:yyyy-mm-dd} - MeetingName]]\n",
-    "uid" : "A74BC3AB-65B8-4642-ADB0-69A2E160AF3A",
-    "name" : "Log Sprint - Meeting",
-    "keyword" : ":lsm:"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "https:\/\/dev.azure.com\/medpricer\/msource\/_workitems\/edit\/{clipboard}",
-    "uid" : "50BBB83D-06AD-45EC-873A-EC8AA0CEBA0C",
-    "name" : "Azure DevOps - WorkItem",
-    "keyword" : ":adol:"
-  }
-}

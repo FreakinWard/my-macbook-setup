@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "DEBUG_PRINT_LIMIT=80000",
-    "uid" : "F7DE3A8A-457E-4087-9B24-A1D400B01FB9",
-    "name" : "Jest Debug Limit",
-    "keyword" : ":jdl:"
-  }
-}

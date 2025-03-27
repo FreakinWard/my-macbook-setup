@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "- {date:HH:mm}\n\t- [ ] #task [[TopicOrProject]] - \n\t\t- Details\n\t\t\t- \n\t\t- Results\n\t\t\t- \n",
-    "uid" : "7E3C353A-56F1-40EC-BC4A-6D9933EFE09B",
-    "name" : "Log Sprint - Task",
-    "keyword" : ":lst:"
-  }
-}

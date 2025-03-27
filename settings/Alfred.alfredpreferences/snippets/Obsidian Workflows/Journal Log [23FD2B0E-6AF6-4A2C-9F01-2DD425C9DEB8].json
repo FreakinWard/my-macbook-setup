@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "{date:HH:mm}\n\t- [ ] ",
-    "uid" : "23FD2B0E-6AF6-4A2C-9F01-2DD425C9DEB8",
-    "name" : "Journal Log",
-    "keyword" : ":log:"
-  }
-}

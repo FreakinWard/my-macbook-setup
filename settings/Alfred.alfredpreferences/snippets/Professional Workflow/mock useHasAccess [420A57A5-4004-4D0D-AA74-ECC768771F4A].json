@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "import * as useHasAccess from 'hooks\/useHasAccess';\n    import * as useGetAccessToken from 'hooks\/useGetAccessToken';\n    \n    jest.spyOn(useHasAccess, 'useHasAccess').mockImplementation(() => true);\n    jest.spyOn(useGetAccessToken, 'default').mockImplementation(() => '123');",
-    "uid" : "420A57A5-4004-4D0D-AA74-ECC768771F4A",
-    "name" : "mock useHasAccess",
-    "keyword" : ":mha:"
-  }
-}
