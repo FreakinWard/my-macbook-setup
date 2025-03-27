@@ -1,0 +1,187 @@
+[
+    // Source Control Graph Toggle - cmd+0
+    {
+        "key": "cmd+0",
+        "command": "workbench.view.scm",
+        "when": "!sideBarVisible"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible && activeViewlet == 'workbench.view.scm'"
+    },
+    // File Explorer Toggle - cmd+1
+    {
+        "key": "cmd+1",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "!sideBarFocus || activeViewlet != 'workbench.view.explorer'"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible && activeViewlet == 'workbench.view.explorer' && sideBarFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    // Run and Debug Toggle - cmd+2 
+    {
+        "key": "cmd+2",
+        "command": "workbench.view.debug",
+        "when": "!sideBarVisible || activeViewlet != 'workbench.view.debug'"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.focusSideBar",
+        "when": "sideBarVisible && activeViewlet == 'workbench.view.debug' && !sideBarFocus"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible && activeViewlet == 'workbench.view.debug' && sideBarFocus"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    // Source Control Toggle - cmd+3
+    {
+        "key": "cmd+3",
+        "command": "workbench.scm.focus",
+        "when": "!sideBarFocus || activeViewlet != 'workbench.view.scm'"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible && activeViewlet == 'workbench.view.scm' && sideBarFocus"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    // Terminal Panel Toggle - cmd+4
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    // Custom Extension Shortcuts
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.view.extension.windsurf"
+    },
+    // Editor Navigation and Manipulation
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // commenting lines
+    {
+        "key": "cmd+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+/",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.commentLine",
+                "cursorDown"
+            ]
+        },
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Source Control view - Enter to open file
+    // {
+    //     "key": "enter",
+    //     "command": "workbench.action.focusActiveEditorGroup",
+    //     "when": "scmViewVisibleAndFocus"
+    // },
+    // Source Control view - cmd+d to open diff - 
+    // {
+    //     "key": "cmd+d",
+    //     "command": "git.openDiff",
+    //     "when": "listFocus && activeViewlet == 'workbench.view.scm'"
+    // },
+    // Disabled Default Keybindings
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.autoFix",
+        "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+    },
+    {
+        "key": "cmd+b",
+        "command": "typescript.goToSourceDefinition"
+    }
+]
