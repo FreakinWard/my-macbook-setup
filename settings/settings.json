@@ -1,0 +1,64 @@
+{
+  "windsurf.autocompleteSpeed": "fast",
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "gitlens.gitKraken.activeOrganizationId": "fe0e75c1-1fb3-4125-80f4-cb8daaf22718",
+  "files.autoSave": "onFocusChange",
+  "editor.fontFamily": "Dank Mono, MesloLGS NF, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.minimap.autohide": true,
+  "editor.minimap.enabled": false,
+  "workbench.settings.applyToAllProfiles": [],
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.gist": "dc03bc53608212e864b2c71c221cfaea",
+  "terminal.integrated.fontSize": 16,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.colorCustomizations": {
+    // "tab.activeBackground": "#ffff00",
+    // "tab.activeForeground": "#ffff00",
+    // "titleBar.activeBackground": "#ffff00",
+    // "tab.activeBorderTop": "#ffff00",
+    // "editor.findMatchBackground": "#ffff00",
+    // "editor.findMatchHighlightBackground": "#ffff00",
+    // "editor.findMatchBorder": "#000000",
+    // "tab.inactiveBackground": "#ff0000"
+    "titleBar.activeBackground": "#303335",
+    // "titleBar.activeForeground": "#BCBDBC",
+    // "titleBar.activeForeground": "#777879",
+    // "editor.background": "#2B2B2B",
+    // "editor.background": "#181818",
+    "editor.background": "#1E1E1E",
+    "statusBar.background": "#303335"
+  },
+  "workbench.colorTheme": "Jetbrains Dark Theme",
+  "jest.jestCommandLine": "npx nx test webapp",
+  "jest.runMode": {
+    "type": "on-demand",
+    "runAllTestsOnStartup": false,
+    "showInlineError": true
+  },
+  "jest.nodeEnv": {
+    "NODE_ENV": "test"
+  },
+  "editor.linkedEditing": true,
+  "windsurf.autoExecutionPolicy": "auto",
+  "windsurf.chatFontSize": "default",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.autoStageFileChanges": true, // Automatically stages all changes to tracked files
+  "git.openDiffOnClick": true,
+  "git.openRepositoryInParentFolders": "always",
+  "windsurf.explainAndFixInCurrentConversation": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "files.watcherExclude": {
+    "**/node_modules/**": true
+  },
+  "diffEditor.renderSideBySide": false,
+  "workbench.iconTheme": "vscode-icons",
+  "windsurf.rememberLastModelSelection": true,
+  "windsurf.openRecentConversation": true,
+  "workbench.editor.enablePreview": false,
+}
